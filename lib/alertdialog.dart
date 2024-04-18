@@ -125,11 +125,9 @@ class _DialogBoxState extends State<DialogBox> {
             ),
             // Show the message if all input fields are empty and Save button is pressed
             if (isTextFieldEmpty || _selectedDate == null || _selectedTime == null)
-              Center(
-                child: Text(
-                  "Please enter all input fields before saving.",
-                  style: TextStyle(color: Colors.red,),
-                ),
+              Text(
+                "Please enter all input fields before saving.",
+                style: TextStyle(color: Colors.red,),textAlign: TextAlign.center,
               ),
             // save and cancel
             Row(
